@@ -29,6 +29,9 @@ ac_add_options --disable-debug
 # switching between optimized and debug builds while developing
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-@CONFIG_GUESS@
 
+# Multi core build
+mk_add_options MOZ_PARALLEL_BUILD=4
+
 # Minimal build options
 ac_add_options --disable-debug-symbols
 ac_add_options --disable-jit
